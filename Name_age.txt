@@ -1,0 +1,14 @@
+# Geting user name
+name = input("What is your name?" ).strip().title()
+
+# Geting user age
+while True:
+    try:
+        age = int(input("How old are you? ").strip())
+        break
+    except ValueError:
+        print("Please enter a valid number for your age.")
+
+
+# Print user name and age and say hello to he/she
+print(f"Hello, {name} You are {age} years old")
